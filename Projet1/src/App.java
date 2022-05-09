@@ -4,17 +4,21 @@ public class App {
         int priceFrancs = 45; // entier
         double priceEuros = priceFrancs / conversion;
 
-        boolean isTrue = true;
-
         System.out.println("Hello, World!");
         System.out.println("Prix en francs : " + priceFrancs + "F");
         System.out.println("Prix en euros : " + priceEuros + "€");
+
+        // ------------ //
+
+        boolean isTrue = true;
 
         if (isTrue) {
             System.out.println("La phrase est vraie");
         } else {
             System.out.println("La phrase est incorrecte et est donc fausse !");
         }
+
+        // ------------ //
 
     }
 }
