@@ -1,4 +1,7 @@
 public class App {
+
+    static int valueData = 404;
+
     public static void main(String[] args) throws Exception {
         final double conversion = 6.55957; // constante
         int priceFrancs = 45; // entier
@@ -20,5 +23,12 @@ public class App {
 
         // ------------ //
 
+        System.out.println("Code erreur " + valueData + " - Portée globale de la variable");
+
+        // ------------ //
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("La valeur de la variable i est égale à " + i + ".");
+        }
     }
 }
