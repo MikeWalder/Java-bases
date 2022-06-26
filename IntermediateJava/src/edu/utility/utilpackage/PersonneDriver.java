@@ -9,9 +9,14 @@ public class PersonneDriver {
 		
 		perso1.setNom("Jean");
 		perso1.setAge(36);
+		try {
+			perso1.setAge(-45);
+		} catch(IllegalArgumentException e) {
+			System.out.println(e.getMessage());
+		}
 		
 		perso1.presentation();
-		perso1.setAge(-34);
+		
 		
 		System.out.printf("Votre nom : %s%nVotre âge : %d%n%n", perso1.getNom(), perso1.getAge());
 	}

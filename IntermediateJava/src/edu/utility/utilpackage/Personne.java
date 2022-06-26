@@ -16,7 +16,7 @@ public class Personne {
 	
 	public void setAge(int age) {
 		if(age <= 0) {
-			System.out.printf("L'âge entré est négatif !%nEntrez un âge valide.%n");
+			throw new IllegalArgumentException("L'âge entré est invalide !");
 		} else {
 			this.age = age;
 		}
