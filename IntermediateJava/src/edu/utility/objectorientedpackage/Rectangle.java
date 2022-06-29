@@ -7,6 +7,8 @@ public class Rectangle extends Forme {
 		this.cote = cote;
 	}
 	
+	// La classe aire doit être définie car abstraite dans la classe parent
+	@Override
 	public double aire() {
 		return cote * cote;
 	}
