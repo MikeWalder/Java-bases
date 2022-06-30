@@ -19,8 +19,11 @@ public class FormeDriver{
 		for(Forme f: tab1) {
 			System.out.println(f.aire());
 		}
+<<<<<<< HEAD
 		
 		new Cercle();
+=======
+>>>>>>> 518c65623f3d4829e54501c655a737888018470a
 	}
 
 }
