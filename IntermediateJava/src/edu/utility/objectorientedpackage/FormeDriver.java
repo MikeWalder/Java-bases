@@ -23,6 +23,11 @@ public class FormeDriver{
 		Cercle cercle1 = new Cercle();
 		
 		cercle1.returnPropForme();
+		
+		System.out.println("------------");
+		
+		Cercle c = new Cercle(23.5, "Strasbourg");
+		System.out.printf("%s a une superficie de %.2f km²", c.ville, c.rayon);
 	}
 
 }
