@@ -38,7 +38,17 @@ public class Class_Interne { // classe externe
 	class InterneB {
 		// Cette classe interne accède aussi aux attributs et méthodes de la classe externe
 		public InterneB() {
-			declarationFormelle();
+			if(attr1 < 0) {
+				class BelowZero {
+					public BelowZero() {
+						System.out.println("Ceci est la classe locale !");
+					}
+				}
+				new BelowZero();
+			}
+			else {
+				declarationFormelle();
+			}
 		}
 	}
 	
